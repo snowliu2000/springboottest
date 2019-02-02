@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface ServiceTest {
     List<User> findAll();
+
+    User findById(String term_id);
 }

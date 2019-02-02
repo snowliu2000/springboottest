@@ -16,4 +16,9 @@ public UserMapper userMapper;
     public List<User> findAll() {
         return userMapper.findAllUser();
     }
+
+    @Override
+    public User findById(String term_id) {
+        return userMapper.findById(term_id);
+    }
 }

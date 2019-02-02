@@ -21,5 +21,9 @@ public class Controllertest {
     public List<User> test(){
         return serviceTest.findAll();
     }
+    @RequestMapping("/findById")
+    public User findById(String term_id){
+        return serviceTest.findById(term_id);
+    }
 
 }
