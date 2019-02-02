@@ -18,7 +18,7 @@ public UserMapper userMapper;
     }
 
     @Override
-    public User findById(String term_id) {
+    public List<User> findById(String term_id) {
         return userMapper.findById(term_id);
     }
 }

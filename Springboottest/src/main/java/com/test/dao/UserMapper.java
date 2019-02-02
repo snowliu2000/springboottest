@@ -9,5 +9,5 @@ import java.util.List;
 public interface UserMapper {
     List<User> findAllUser();
 
-    User findById(String term_id);
+    List<User> findById(String term_id);
 }
